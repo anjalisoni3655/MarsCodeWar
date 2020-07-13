@@ -20,7 +20,7 @@ var copy = function (obj) {
   };
   var CanvasTextItem = function (text, sx, sy, ctx) {
 	// private fields
-	var fontSize = 10;
+	var fontSize = 30;
 	var fontFamily = "sans-serif";
 	// public fields
 	this.text = text;
@@ -74,7 +74,7 @@ var copy = function (obj) {
 	var currentLocation;
 	//menu
 	var items = {
-	  menu: {
+	  menu: { H: new CanvasTextItem("Choice for Player-1",20,20,ctx),
 		X: new CanvasTextItem("X", 70, 90, ctx),
 		O: new CanvasTextItem("O", 180, 90, ctx),
 	  },
