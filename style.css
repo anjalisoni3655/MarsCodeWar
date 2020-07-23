@@ -4,14 +4,14 @@ body {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	background-image: linear-gradient(to right bottom, #2b2b52, #8b78e6);
+	background-image: linear-gradient(to right bottom, #2b2b52, #800080);
 	background-repeat: no-repeat;
 	height: 100vh;
 	overflow: hidden;
   }
   
   .main-title {
-	color: #e83350;
+	color: #800080;
 	font-weight: 400;
 	text-align: center;
   }
@@ -21,7 +21,7 @@ body {
 	padding: 20px;
 	padding-top: 10px;
 	width: 302px;
-	background: #006496;
+	background: #80ced6;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
