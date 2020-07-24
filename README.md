@@ -25,6 +25,6 @@ This is a TicTacToe game built in HTML and CSS for the front-end and Javascript 
  $ 
  $
 
-![Screenshot](image1.png)
-![Screenshot](image2.png)
-![Screenshot](image3.png)
+![Screenshot](images/image1.png)
+![Screenshot](images/image2.png)
+![Screenshot](images/image3.png)
