@@ -10,6 +10,6 @@ This is a TicTacToe game which is built in HTML and CSS for the front-end and Ja
 - Pop-up is displayed after each game, like pop-up telling which player won the game, and pop-up if,there's a draw.
 - The board resets to the original state after each game.
 - The AI player uses minimax algorithm to choose its next turn and it makes the AI player unbeatable.
-![Screenshot](image1.png)
-![Screenshot](image3.png)
-![Screenshot](image2.png)
+![Screenshot](images/image1.png)
+![Screenshot](images/image3.png)
+![Screenshot](images/image2.png)
