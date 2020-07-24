@@ -2,29 +2,26 @@ This is a TicTacToe game built in HTML and CSS for the front-end and Javascript 
 
 # Features Available :
 
-## Player Options =>
+## Player Options 
 - Allows two human player game.
 - One Human player and AI player of different depths.
 - Two AI player playing together.
 
-## Choose X/O =>
+## Choose X/O 
 - User can choose the sign "X" or "O" at the start of the game.
 
-## Check scores =>
+## Check scores 
 - A scoreboard that updates the score of both the players after each game.
 
-## Settings => 
+## Settings 
 - A menu button, to change the settings.
 - The board resets to the original state after each game or another option to reset is to click on the RESET button.
 - A Pop-up is displayed after each game declaring result in win/draw.
 
-## Algorithm used =>
+## Algorithm used
 - The AI player uses minimax algorithm to choose its next turn and it makes the AI player unbeatable.
 
-# ADDITIONAL ALGORITHMS USED :
- $ 
- $
-
+# ADDITIONAL ALGORITHMS USED
 ![Screenshot](images/image1.png)
 ![Screenshot](images/image2.png)
 ![Screenshot](images/image3.png)
