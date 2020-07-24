@@ -1,81 +1,48 @@
+<!--index.html-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Tic Tac Toe</title>
-  </head>
-  <body>
-    <div id="won-popup" class="won-popup">PLAYER 1 WON</div>
-    <div id="won-popup2" class="won-popup">PLAYER 2 WON</div>
-    <div id="won-popup3" class="won-popup">DRAW</div>
-    <div style="display: flex; justify-content: center;">
-      <div class="main-big">
-        <h1 class="main-title">Let's play Tic-Tac-Toe</h1>
-        <div class="board">
-          <div class="header">
-            <div class="menu-button" style="display: none;">Home</div>
-            <div class="score-block" style="display: none;">
-              <div class="player-block player-block-1">
-                <div class="player-name">Player 1</div>
-                <div class="score">0</div>
-                &nbsp;
-              </div>
-              <div class="player-block player-block-2">
-                <div class="player-name">Player2</div>
-                <div class="score">0</div>
-              </div>
-            </div>
-            <div class="drop-downs">
-              <h3>Choose the player</h3>
-              <div class="drop-down">
-                <div class="drop-down-title">Player1</div>
-                <select name="player-1" id="player-1">
-                  <option value="0">Human 1</option>
-                  <option value="1">AI Depth 1</option>
-                  <option value="2">AI Depth 2</option>
-                  <option value="3">AI Depth 3</option>
-                  <option value="4">AI Depth 4</option>
-                  <option value="5">AI Depth 5</option>
-                  <option value="6">AI Depth 6</option>
-                  <option value="7">AI Depth 7</option>
-                  <option value="8">AI Depth 8</option>
-                  <option value="9">AI Depth 9</option>
-                </select>
-              </div>
-              <div class="drop-down">
-                <div class="drop-down-title">Player 2</div>
-                <select name="player-2" id="player-2">
-                  <option value="0">Human 2</option>
-                  <option value="1">AI Depth 1</option>
-                  <option value="2">AI Depth 2</option>
-                  <option value="3">AI Depth 3</option>
-                  <option value="4">AI Depth 4</option>
-                  <option value="5">AI Depth 5</option>
-                  <option value="6">AI Depth 6</option>
-                  <option value="7">AI Depth 7</option>
-                  <option value="8">AI Depth 8</option>
-                  <option value="9">AI Depth 9</option>
-                </select>
-              </div>
-            </div>
-          </div>
+    <head>
+        <title>Fruits Game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" href="styling.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    </head>
 
-          <div class="screen">
-            <canvas
-              class="screen-canvas"
-              id="screen-canvas"
-              width="300"
-              height="300"
-            >
-              Your browser does not support the HTML5 canvas tag.
-            </canvas>
-          </div>
+    <body>
+        <div id="container">
+            <div id="score">
+                Score: <span id="scorevalue">0</span>
+            </div>
+            <div id="trialsLeft">
+
+            </div>
+            <div id="correct">
+                Correct
+            </div>
+            <div id="wrong">
+                Try again
+            </div>
+            <div id="fruitsContainer">
+                <img id="fruit1" class="fruit">
+            </div>
+            <div id="instruction">
+                Catch Fruits
+            </div>
+            <div id="startreset">
+                Start Game
+            </div>
+            <div id="gameOver">
+
+            </div>
         </div>
-      </div>
-    </div>
-  </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="./script.js"></script>
+        <audio id="slicesound">
+            <source src="audio/splits.mp3"></source>
+            <source src="audio/splits.ogg"></source>
+        </audio>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js">
+    </script>
+        <script src="jquery.js"></script>
+    </body>
 </html>
