@@ -24,8 +24,9 @@ This is a TicTacToe game built in HTML and CSS for the front-end and Javascript 
 ## Algorithm used
 - The AI player uses minimax algorithm to choose its next turn and it makes the AI player unbeatable.
 
-# ADDITIONAL ALGORITHMS USED
-
+# ADDITIONAL ALGORITHMS USED :
+- ALPHA BETA PRUNING-> We have also used Alpha Beta Pruning which is a search algorithm that seeks to decrease the number of nodes that are evaluated by the minimax algorithm in its search tree.
+-
 
 ![Screenshot](images/image1.png)
 ![Screenshot](images/image3.png)
