@@ -123,7 +123,7 @@ canvas {
 
 #confeti {
   position: absolute;
-  z-index: 1000000;
+  z-index: 9999999999000000;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
