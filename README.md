@@ -1,4 +1,6 @@
 This is a TicTacToe game built in HTML and CSS for the front-end and Javascript for the responsiveness of the website.
+#Play The Game
+<a href="https://anjalisoni3655.github.io/MarsCodeWar/">Tic Tac Toe Game</a>
 
 # Features Available :
 
@@ -23,7 +25,7 @@ This is a TicTacToe game built in HTML and CSS for the front-end and Javascript 
 
 # ADDITIONAL ALGORITHMS USED
 
-<a href="https://anjalisoni3655.github.io/MarsCodeWar/">Tic Tac Toe Game</a>
+
 ![Screenshot](images/image1.png)
 ![Screenshot](images/image2.png)
 ![Screenshot](images/image3.png)
