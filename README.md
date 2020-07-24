@@ -11,4 +11,5 @@ This is a TicTacToe game which is built in HTML and CSS for the front-end and Ja
 - The board resets to the original state after each game.
 - The AI player uses minimax algorithm to choose its next turn and it makes the AI player unbeatable.
 ![Screenshot](image1.png)
+![Screenshot](image3.png)
 ![Screenshot](image2.png)
