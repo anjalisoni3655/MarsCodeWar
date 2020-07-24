@@ -2,21 +2,6 @@ var copy = function (obj) {
 	var newObject = jQuery.extend(true, {}, obj);
 	return newObject;
   };
-	function sound(src) {
-	  this.sound = document.createElement("audio");
-	  this.sound.src = src;
-	  this.sound.setAttribute("preload", "auto");
-	  this.sound.setAttribute("controls", "none");
-	  this.sound.style.display = "none";
-	  document.body.appendChild(this.sound);
-	  this.play = function(){
-	    this.sound.play();
-	  }
-	  this.stop = function(){
-	    this.sound.pause();
-	  }
-	}
-
   var Cursor = function (jQueryString) {
 	// private fields
 	var element = jQuery(jQueryString);
@@ -802,10 +787,6 @@ var copy = function (obj) {
 	  }
 	  return ["XO"];
 	};
-	var mySound;
-	mySound= new sound("sound.mp3");
-	var error;
-	error=new sound("error.mp3");
 	var winCheckAction = function (check) {
 	  switch (check[0]) {
 		case "X":
@@ -817,7 +798,7 @@ var copy = function (obj) {
 		  window.setTimeout(function () {
 			document.getElementById("won-popup").style.display = "none";
 		  }, 2000);
-      mySound.play();
+
 		  break;
 		case "O":
 		  score.O++;
@@ -828,7 +809,6 @@ var copy = function (obj) {
 		  window.setTimeout(function () {
 			document.getElementById("won-popup2").style.display = "none";
 		  }, 2000);
-			mySound.play();
 		  break;
 		case "XO":
 		  window.setTimeout(function () {
@@ -837,7 +817,6 @@ var copy = function (obj) {
 		  window.setTimeout(function () {
 			document.getElementById("won-popup3").style.display = "none";
 		  }, 2000);
-			error.play();
 		case "OX":
 		  window.setTimeout(function () {
 			document.getElementById("won-popup3").style.display = "block";
@@ -845,7 +824,6 @@ var copy = function (obj) {
 		  window.setTimeout(function () {
 			document.getElementById("won-popup3").style.display = "none";
 		  }, 2000);
-			error.play();
 		  break;
 		default:
 		  changePlayerTurn();
