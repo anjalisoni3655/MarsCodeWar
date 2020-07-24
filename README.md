@@ -17,7 +17,7 @@ This is a TicTacToe game built in HTML and CSS for the front-end and Javascript 
 - A scoreboard that updates the score of both the players after each game.
 
 ## Settings 
-- A menu button, to change the settings.
+- A menu button is available to change the settings.
 - The board resets to the original state after each game or another option to reset is to click on the RESET button.
 - A Pop-up is displayed after each game declaring result in win/draw.
 
