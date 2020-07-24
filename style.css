@@ -4,24 +4,24 @@ body {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	background-image: linear-gradient(to right bottom, #2b2b52, #800080);
+	background-image: linear-gradient(to right bottom, #2b2b52, #8b78e6);
 	background-repeat: no-repeat;
 	height: 100vh;
 	overflow: hidden;
   }
-  
+
   .main-title {
-	color: #800080;
-	font-weight: 600;
+	color: #e83350;
+	font-weight: 400;
 	text-align: center;
   }
-  
+
   .board {
 	margin: auto;
 	padding: 20px;
 	padding-top: 10px;
 	width: 302px;
-	background: #80ced6;
+	background: #006496;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
@@ -32,11 +32,11 @@ body {
 	box-shadow: 2px 3px 20px -2px, inset 1px 0px 10px -2px white,
 	  inset -1px -1.5px 10px -1px black;
   }
-  
+
   .header {
 	height: 50px;
   }
-  
+
   .menu-button {
 	z-index: 10000;
 	position: relative;
@@ -50,11 +50,29 @@ body {
 	box-shadow: 5px 5px 5px #192a56;
 	cursor: pointer;
   }
-  
+	.replay
+	{ position: absolute;
+	z-index: 50;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	margin-top: 20px;
+	background-color: lightblue;
+	color:black;
+	width: 100px;
+	padding: 0.5rem;
+	border-radius: 10px;
+	display: none;
+	cursor:pointer;
+	  }
+
   .menu-button:hover {
 	cursor: pointer;
   }
-  
+
   .score-block {
 	margin-bottom: 50px;
 	background-color: #7b8788;
@@ -70,7 +88,7 @@ body {
 	-o-transform: translateY(-25px);
 	transform: translateY(-25px);
   }
-  
+
   .player-block {
 	display: flex;
 	flex-direction: column;
@@ -78,26 +96,26 @@ body {
 	margin-top: 27%;
 	text-align: center;
   }
-  
+
   .player-block-1 {
 	margin-right: 100px;
 	margin-left: 50px;
   }
-  
+
   .player-name {
   	color: #fff;
 	display: inline;
   }
-  
+
   .score {
 	display: inline;
 	font-weight: bold;
   }
-  
+
   .his-turn {
 	font-weight: bold;
   }
-  
+
   .drop-downs {
 	padding-bottom: 80px;
 	display: flex;
@@ -115,13 +133,13 @@ body {
 	  rgba(255, 255, 255, 0.418)
 	);
   }
-  
+
   .drop-down,
   select,
   .drop-down-title {
 	display: inline;
   }
-  
+
   .screen {
 	margin-top: 150px;
 	width: 300px;
@@ -129,12 +147,12 @@ body {
 	background: #222;
 	border: solid #222 1px;
   }
-  
+
   .screen-canvas {
 	width: 300px;
 	height: 300px;
   }
-  
+
   .main-big {
 	border-radius: 10px;
 	background-color: white;
@@ -144,7 +162,23 @@ body {
 	padding-bottom: 50px;
 	padding-top: 10px;
   }
-  
+
+	.new-game {
+	position: absolute;
+	z-index: 10000000000;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+	margin-top: 20px;
+	background-color: lightblue;
+	width: 300px;
+	padding: 5rem;
+	border-radius: 30px;
+	display: none;
+	}
   .won-popup {
 	position: absolute;
 	z-index: 10000000000;
@@ -161,7 +195,7 @@ body {
 	border-radius: 30px;
 	display: none;
   }
-  
+
   .won-popup2 {
 	position: absolute;
 	z-index: 10000000000;
@@ -178,7 +212,7 @@ body {
 	border-radius: 30px;
 	display: none;
   }
-  
+
   .won-popup3 {
 	position: absolute;
 	z-index: 10000000000;
