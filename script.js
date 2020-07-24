@@ -802,9 +802,9 @@ var copy = function (obj) {
 	  return ["XO"];
 	};
 	  var mySound;
-	mySound= new sound("sound.mp3");
+	mySound= new sound("music/sound.mp3");
 	var error;
-	error=new sound("error.mp3");
+	error=new sound("music/error.mp3");
 	var winCheckAction = function (check) {
 	  switch (check[0]) {
 		case "X":
