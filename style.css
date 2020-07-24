@@ -11,8 +11,8 @@ body {
 }
 
 .main-title {
-  color: #e83350;
-  font-weight: 400;
+  color: #173F5F;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -21,7 +21,7 @@ body {
   padding: 20px;
   padding-top: 10px;
   width: 302px;
-  background: #006496;
+  background: #00FFFF;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
