@@ -4,7 +4,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-image: linear-gradient(to right bottom, #2b2b52, #8b78e6);
+  background-image: linear-gradient(to right bottom, #f5AD92, #f5AD92);
   background-repeat: no-repeat;
   height: 100vh;
   overflow: hidden;
@@ -21,7 +21,7 @@ body {
   padding: 20px;
   padding-top: 10px;
   width: 302px;
-  background: #006496;
+  background: #f88379;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
