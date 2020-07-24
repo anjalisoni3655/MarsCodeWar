@@ -50,7 +50,7 @@ body {
 	box-shadow: 5px 5px 5px #192a56;
 	cursor: pointer;
   }
-.replay
+	.replay
 	{ position: absolute;
 	z-index: 50;
 	left: 50%;
@@ -68,7 +68,7 @@ body {
 	display: none;
 	cursor:pointer;
 	  }
-
+	
   .menu-button:hover {
 	cursor: pointer;
   }
