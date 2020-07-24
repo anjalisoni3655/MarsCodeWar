@@ -198,7 +198,7 @@ body {
 
   .won-popup2 {
 	position: absolute;
-	z-index: 99999990000000000;
+	z-index: 10000000000;
 	left: 50%;
 	top: 40%;
 	transform: translate(-50%, -50%);
