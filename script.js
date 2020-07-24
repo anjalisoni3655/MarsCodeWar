@@ -2,6 +2,21 @@ var copy = function (obj) {
 	var newObject = jQuery.extend(true, {}, obj);
 	return newObject;
   };
+	function sound(src) {
+	  this.sound = document.createElement("audio");
+	  this.sound.src = src;
+	  this.sound.setAttribute("preload", "auto");
+	  this.sound.setAttribute("controls", "none");
+	  this.sound.style.display = "none";
+	  document.body.appendChild(this.sound);
+	  this.play = function(){
+	    this.sound.play();
+	  }
+	  this.stop = function(){
+	    this.sound.pause();
+	  }
+	}
+
   var Cursor = function (jQueryString) {
 	// private fields
 	var element = jQuery(jQueryString);
@@ -108,7 +123,7 @@ var copy = function (obj) {
 	  } else {
 		var totalFrames = (FPS * duration) / 1000;
 		var frame = 0;
-  
+
 		function frameAction() {
 		  if (frame >= totalFrames) {
 			return;
@@ -162,7 +177,7 @@ var copy = function (obj) {
 	  } else {
 		var totalFrames = (FPS * duration) / 1000;
 		var frame = 0;
-  
+
 		function frameAction() {
 		  if (frame >= totalFrames) {
 			return;
@@ -508,6 +523,7 @@ var copy = function (obj) {
 	var cursor = new Cursor("#screen-canvas");
 	// elemets
 	var menuButton = jQuery(".menu-button");
+	var replay=jQuery(".replay");
 	var scoreBlock = jQuery(".score-block");
 	var scoreX = jQuery(".player-block-1 .score");
 	var scoreO = jQuery(".player-block-2 .score");
@@ -592,8 +608,22 @@ var copy = function (obj) {
 	  scoreBlock.hide();
 	  clearTimeout(newGameTimeOut);
 	  reset();
+		replay.hide();
 	  dropDowns.fadeIn();
+
 	};
+	var replayagain=function()
+	{ clearGameBoard();
+	  resetScore();
+
+
+		resetGameBoard();
+		window.setTimeout(function () {
+		document.getElementById("new-game").style.display = "none";
+		}, 2000);
+
+
+	}
 	var openGame = function () {
 	  dropDowns.hide();
 	  painter.buildMap(400);
@@ -601,6 +631,7 @@ var copy = function (obj) {
 	  updateScore();
 	  menuButton.fadeIn();
 	  scoreBlock.fadeIn();
+		replay.fadeIn();
 	};
 	var resetScore = function () {
 	  score.X = 0;
@@ -617,7 +648,7 @@ var copy = function (obj) {
 	  painter.buildMap();
 	};
 	var reset = function () {
-	  resetScore();
+	  resetScore()
 	  resetGameBoard();
 	};
 	var updateScore = function () {
@@ -634,6 +665,13 @@ var copy = function (obj) {
 	  menuButton.click(function () {
 		openMenu();
 	  });
+		replay.click(function(){
+			window.setTimeout(function () {
+		  document.getElementById("new-game").style.display = "block";
+		  }, 0);
+
+			replayagain();
+		});
 	};
 	var getMousePosition = function (event) {
 	  var pos = {
@@ -764,6 +802,10 @@ var copy = function (obj) {
 	  }
 	  return ["XO"];
 	};
+	var mySound;
+	mySound= new sound("sound.mp3");
+	var error;
+	error=new sound("error.mp3");
 	var winCheckAction = function (check) {
 	  switch (check[0]) {
 		case "X":
@@ -775,7 +817,7 @@ var copy = function (obj) {
 		  window.setTimeout(function () {
 			document.getElementById("won-popup").style.display = "none";
 		  }, 2000);
-  
+      mySound.play();
 		  break;
 		case "O":
 		  score.O++;
@@ -786,6 +828,7 @@ var copy = function (obj) {
 		  window.setTimeout(function () {
 			document.getElementById("won-popup2").style.display = "none";
 		  }, 2000);
+			mySound.play();
 		  break;
 		case "XO":
 		  window.setTimeout(function () {
@@ -794,6 +837,7 @@ var copy = function (obj) {
 		  window.setTimeout(function () {
 			document.getElementById("won-popup3").style.display = "none";
 		  }, 2000);
+			error.play();
 		case "OX":
 		  window.setTimeout(function () {
 			document.getElementById("won-popup3").style.display = "block";
@@ -801,6 +845,7 @@ var copy = function (obj) {
 		  window.setTimeout(function () {
 			document.getElementById("won-popup3").style.display = "none";
 		  }, 2000);
+			error.play();
 		  break;
 		default:
 		  changePlayerTurn();
@@ -856,4 +901,4 @@ var copy = function (obj) {
   jQuery(document).ready(function ($) {
 	var game = new Game();
 	game.start();
-  });
+});
