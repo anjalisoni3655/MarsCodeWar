@@ -22,6 +22,8 @@ This is a TicTacToe game built in HTML and CSS for the front-end and Javascript 
 - The AI player uses minimax algorithm to choose its next turn and it makes the AI player unbeatable.
 
 # ADDITIONAL ALGORITHMS USED
+
+<a href="https://anjalisoni3655.github.io/MarsCodeWar/">Tic Tac Toe Game</a>
 ![Screenshot](images/image1.png)
 ![Screenshot](images/image2.png)
 ![Screenshot](images/image3.png)
