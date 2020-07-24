@@ -1,0 +1,248 @@
+body {
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: linear-gradient(to right bottom, #2b2b52, #8b78e6);
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-title {
+  color: #e83350;
+  font-weight: 400;
+  text-align: center;
+}
+
+.board {
+  margin: auto;
+  padding: 20px;
+  padding-top: 10px;
+  width: 302px;
+  background: #006496;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 3px 20px -2px, inset 1px 1.5px 10px -2px white,
+    inset -1px -1.5px 10px -1px black;
+  -moz-box-shadow: 2px 3px 20px -2px, inset 1px 1.5px 10px -2px white,
+    inset -1px -1.5px 10px -1px black;
+  box-shadow: 2px 3px 20px -2px, inset 1px 0px 10px -2px white,
+    inset -1px -1.5px 10px -1px black;
+}
+
+.header {
+  height: 50px;
+}
+
+.menu-button {
+  z-index: 10000;
+  position: relative;
+  font-size: 30px;
+  width: 60px;
+  margin-left: 35%;
+  color: #fff;
+  background-color: #0a79df;
+  padding: 10px 20px 10px 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #192a56;
+  cursor: pointer;
+}
+.replay {
+  position: absolute;
+  z-index: 50;
+  left: 50%;
+  top: 2%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  background-color: lightblue;
+  color: black;
+  width: 100px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  display: none;
+  cursor: pointer;
+  border-style: none;
+}
+
+.menu-button:hover {
+  cursor: pointer;
+}
+
+.score-block {
+  margin-bottom: 50px;
+  background-color: #7b8788;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.466);
+  padding-right: 100px;
+  color: rgb(14, 12, 12);
+  display: flex;
+  width: 200px;
+  -webkit-transform: translateY(-25px);
+  -moz-transform: translateY(-25px);
+  -ms-transform: translateY(-25px);
+  -o-transform: translateY(-25px);
+  transform: translateY(-25px);
+}
+
+.player-block {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-top: 27%;
+  text-align: center;
+}
+
+.player-block-1 {
+  margin-right: 100px;
+  margin-left: 50px;
+}
+
+.player-name {
+  color: #fff;
+  display: inline;
+}
+
+.score {
+  display: inline;
+  font-weight: bold;
+}
+
+.his-turn {
+  font-weight: bold;
+}
+
+.drop-downs {
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 20px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  height: 100px;
+  align-items: center;
+  background-image: linear-gradient(
+    to right bottom,
+    #fff,
+    rgba(255, 255, 255, 0.418)
+  );
+}
+
+.drop-down,
+select,
+.drop-down-title {
+  display: inline;
+}
+
+.screen {
+  margin-top: 150px;
+  width: 300px;
+  height: 300px;
+  background: #222;
+  border: solid #222 1px;
+}
+
+.screen-canvas {
+  width: 300px;
+  height: 300px;
+}
+
+.main-big {
+  border-radius: 10px;
+  background-color: white;
+  width: 500px;
+  position: relative;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+.new-game {
+  position: absolute;
+  z-index: 10000000000;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  background-color: lightblue;
+  width: 300px;
+  padding: 5rem;
+  border-radius: 30px;
+  display: none;
+}
+.won-popup {
+  position: absolute;
+  z-index: 10000000000;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  background-color: green;
+  width: 300px;
+  padding: 5rem;
+  border-radius: 30px;
+  display: none;
+}
+
+.won-popup2 {
+  position: absolute;
+  z-index: 99999990000000000;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  background-color: green;
+  width: 300px;
+  padding: 5rem;
+  border-radius: 30px;
+  display: none;
+}
+
+.won-popup3 {
+  position: absolute;
+  z-index: 10000000000;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  background-color: green;
+  width: 300px;
+  padding: 5rem;
+  border-radius: 30px;
+  display: none;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+#confeti {
+  position: absolute;
+  z-index: 9999999999000000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  display: none;
+}
