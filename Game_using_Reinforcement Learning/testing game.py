@@ -32,14 +32,14 @@ def check_current_state(game_state):
         game_state[i][0] is not ' '):
             return game_state[i][0], "Done"
     
-    #check vertical
+    #check vertical state
     for i in range(0,3):
         if (game_state[0][i] == game_state[1][i] and 
         game_state[1][i] == game_state[2][i] and 
         game_state[0][i] is not ' '):
             return game_state[0][i], "Done"
     
-    # Check diagonals
+    # Check diagonals state
     if (game_state[0][0] == game_state[1][1] and 
         game_state[1][1] == game_state[2][2] and 
         game_state[0][0] is not ' '):
